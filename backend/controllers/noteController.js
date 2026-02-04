@@ -66,5 +66,5 @@ export const deleteNote = async (req, res) => {
     }
 
     await  note.deleteOne();
-    res.json({message: "Not Deleted"});
+    res.json({message: "Note Deleted"});
 }

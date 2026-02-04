@@ -7,13 +7,11 @@ node_modules/
 .pnp.js
 
 # ===============================
-# Environment Variables
+# Environment Variables (SECRETS)
 # ===============================
 .env
-.env.local
-.env.development
-.env.production
-.env.test
+.env.*
+!.env.example
 
 # ===============================
 # Logs
@@ -26,17 +24,11 @@ yarn-debug.log*
 yarn-error.log*
 
 # ===============================
-# Build / Dist
+# Build / Output
 # ===============================
 dist/
 build/
 out/
-
-# ===============================
-# Next.js (if used)
-# ===============================
-.next/
-.vercel/
 
 # ===============================
 # React / Vite
@@ -45,13 +37,10 @@ out/
 .cache/
 
 # ===============================
-# OS & Editor
+# Next.js (if ever used)
 # ===============================
-.DS_Store
-Thumbs.db
-.vscode/
-.idea/
-*.swp
+.next/
+.vercel/
 
 # ===============================
 # Testing
@@ -63,11 +52,25 @@ coverage/
 # ===============================
 *.sqlite
 *.db
-data/
 mongo-data/
+data/
 
 # ===============================
 # Docker
 # ===============================
 docker-data/
 docker-volume/
+
+# ===============================
+# OS Files
+# ===============================
+.DS_Store
+Thumbs.db
+
+# ===============================
+# Editor / IDE
+# ===============================
+.vscode/
+.idea/
+*.swp
+*.swo
